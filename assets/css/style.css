@@ -1,0 +1,167 @@
+html,body {
+    margin: 0 auto;
+    /* background-image: "../../images/flowers1.jpg";
+    background-size: cover; */
+}
+
+body {
+    background-color: #d1e6f0;
+    font-family: 'Spartan';
+}
+
+nav {
+    /* padding: 10px; */
+}
+
+.nav-wrapper {
+    background-color: #d1e6f0;
+}
+
+a {
+    color: rgb(51, 51, 51) !important;
+    cursor: default;
+
+}
+
+.sectionsFormat {
+    background-color: rgb(235, 245, 247);
+}
+
+.menu-link:hover {
+    background-color: rgb(75, 133, 172) !important;
+    color: rgb(235, 235, 235) !important;
+    cursor: default !important;
+}
+
+.brand-logo {
+    font-family: 'Satisfy', cursive;
+    background-color: #f5eef200 !important;
+}
+
+.brand-logo:hover {
+    font-family: 'Satisfy', cursive;
+    background-color: #f5eef200 !important;
+    color: #505050 !important;
+    text-shadow: 3px 3px #7aa4d463;
+    cursor: default !important;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.details {
+    margin-top: -50px;
+    font-size: 60px;
+}
+
+.btn {
+    background-color: rgb(207, 228, 245) !important;
+}
+
+h3 {
+    color: rgb(75, 75, 75);
+    /* font-family: 'Great Vibes'; */
+}
+
+img {
+    width: 1500px;
+}
+
+.right {
+    font-size: 32px !important
+}
+
+.left-logo {
+    /* margin-top: 10px; */
+    margin-left: 30px;
+}
+
+.header {
+    font-family: 'Satisfy', cursive;
+    font-size: 100px;
+    color: rgb(75, 133, 172);
+    margin-bottom: 75px;
+    text-shadow: 3px 3px #91abda46;
+}
+
+.grey-text {
+    color: rgb(97, 97, 97) !important;
+    font-size: medium;
+}
+
+.script-class{
+    font-family: 'Sacramento';
+}
+
+.countdown {
+        text-shadow: 3px 3px #91bdda46;
+}
+
+.footer-copyright {
+    /* margin-bottom: -10px !important; */
+    background-image: "../../images/flowers1.jpg" !important;
+    padding: 5px;
+}
+
+/* PUSHPIN */
+
+.pin-top {
+  position: relative;
+}
+
+.pin-bottom {
+  position: relative;
+}
+
+.pinned {
+  position: fixed !important;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    img {
+        width: 1250px !important;
+        height: auto;
+    }
+    
+    .img1 {
+        width: 320px;
+        height: auto;
+    }
+
+    .img2 {
+        /* width: 1200px !important; */
+        height: auto;
+    }
+
+    .header {
+        font-size: 60px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+
+    .details {
+        margin-top: 25px;
+        font-size: 32px;
+    }
+
+    .brand-logo {
+        font-size: 24px !important;
+    }
+}
