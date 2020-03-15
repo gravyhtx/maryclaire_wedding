@@ -205,4 +205,8 @@ img {
     .brand-logo {
         font-size: 24px !important;
     }
+
+    .parallax-container {
+        height: 150px;
+    }
 }
