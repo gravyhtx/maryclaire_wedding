@@ -68,7 +68,7 @@ h2 {
 }
 
 .brand-logo {
-    font-family: 'Satisfy', cursive;
+    font-family: 'Satisfy', sans-serif;
     background-color: #f5eef200 !important;
 }
 
@@ -179,6 +179,10 @@ img {
   position: fixed !important;
 }
 
+.parallax-container {
+    height: 550px !important;
+  }
+
 @media only screen and (max-width: 767px) {
     
     img {
@@ -231,6 +235,6 @@ img {
     }
 
     .parallax-container {
-        height: 150px;
+        height: 520px !important;
     }
 }
