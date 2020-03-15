@@ -2,6 +2,7 @@ html,body {
     margin: 0 auto;
     background-attachment: fixed;
     backface-visibility: hidden;
+    scroll-behavior: smooth;
     /* background-image: "../../images/flowers1.jpg";
     background-size: cover; */
 }
