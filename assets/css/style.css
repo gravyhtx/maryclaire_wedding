@@ -5,8 +5,12 @@ html,body {
 }
 
 body {
-    background-color: #d1e6f0;
+    background-color: #fff5f9;
     font-family: 'Spartan';
+    background-image: url("../../images/rpt.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-size: 75%;
 }
 
 nav {
@@ -14,7 +18,7 @@ nav {
 }
 
 .nav-wrapper {
-    background-color: #d1e6f0;
+    background-color: #ffeaf3;
 }
 
 a {
@@ -23,13 +27,17 @@ a {
 
 }
 
+h2 {
+    margin-top: -10px !important;
+}
+
 .sectionsFormat {
-    background-color: rgb(235, 245, 247);
+    background-color: #fffff0;
 }
 
 .menu-link:hover {
-    background-color: rgb(75, 133, 172) !important;
-    color: rgb(235, 235, 235) !important;
+    background-color: rgb(243, 190, 223) !important;
+    color: rgb(252, 250, 239) !important;
     cursor: default !important;
 }
 
@@ -39,10 +47,10 @@ a {
 }
 
 .brand-logo:hover {
-    font-family: 'Satisfy', cursive;
+    font-family: 'Satisfy', sans-serif;
     background-color: #f5eef200 !important;
     color: #505050 !important;
-    text-shadow: 3px 3px #7aa4d463;
+    text-shadow: 3px 3px #d47ab663;
     cursor: default !important;
 }
 
@@ -71,7 +79,7 @@ a {
 }
 
 .btn {
-    background-color: rgb(207, 228, 245) !important;
+    background-color: #faf0f4 !important;
 }
 
 h3 {
@@ -84,6 +92,14 @@ img {
     height: auto;
 }
 
+#img1 {
+    left: 20px;
+}
+
+#img3 {
+    top: -500px;
+}
+
 .right {
     font-size: 32px !important
 }
@@ -94,11 +110,12 @@ img {
 }
 
 .header {
-    font-family: 'Satisfy', cursive;
-    font-size: 100px;
-    color: rgb(75, 133, 172);
+    font-family: 'Rouge Script', sans-serif;
+    font-size: 120px;
+    color: rgb(92, 92, 92);
     margin-bottom: 75px;
-    text-shadow: 3px 3px #91abda46;
+    text-shadow: 3px 3px #66666646;
+    margin-top: 50px;
 }
 
 .grey-text {
@@ -150,26 +167,35 @@ img {
         height: auto;
     }
 
-    .img1 {
-        width: 200px !important;
-        height: auto !important;
+    #img1 {
+        left: 100px;
     }
 
-    .img2 {
+    #img2 {
         /* width: 1200px !important; */
         width: 300px !important;
         height: auto !important;
+        left: -150px;
+        top: 50px;
+    }
+
+    #img3 {
+        top: -400px;
+        left: 150px;
+        height: auto;
+        width: auto;
     }
 
     .header {
-        font-size: 60px;
+        font-size: 48px;
         margin-top: -5px;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
     }
 
     .details {
         margin-top: 25px;
-        font-size: 32px;
+        margin-bottom: 50px;
+        font-size: 40px;
     }
 
     .brand-logo {
