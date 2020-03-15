@@ -7,7 +7,7 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     
-    <title>Mary-Claire & Kasey's Wedding</title>
+    <title>Mary-Claire & Kasey's Wedding | Wedding Details</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,46 +28,41 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right menu-items hide-on-med-and-down">
           <li><a class="menu-link" href="details.html">WEDDING DETAILS</a></li>
-          <li><a class="menu-link" href="reception.html">RECEPTION</a></li>
           <li><a class="menu-link" href="registry.html">REGISTRY</a></li>
+          <li><a class="menu-link" href="guestbook.html">GUEST BOOK</a></li>
           <li><a class="menu-link" href="gallery.html">PHOTO GALLERY</a></li>
           </ul>
       </div>
       </nav>
-    </div>
-  
-      <ul class="sidenav" id="mobile-demo">
-      <li><a href="details.html">WEDDING DETAILS</a></li>
-      <li><a href="reception.html">RECEPTION</a></li>
-      <li><a href="registry.html">REGISTRY</a></li>
-      <li><a href="gallery.html">PHOTO GALLERY</a></li>
-      </ul>
+      </div>
+    
+        <ul class="sidenav" id="mobile-demo"><br>
+        <li><a href="details.html">WEDDING DETAILS</a></li>
+        <li><a href="registry.html">REGISTRY</a></li>
+        <li><a href="guestbook.html">GUEST BOOK</a></li>
+        <li><a href="gallery.html">PHOTO GALLERY</a></li>
+        </ul>
 
     <!-- PARALLAX -->
-
-    <!-- <div class="parallax-container">
-        <div class="parallax"><img src="images/image1.jpg"></div>
-    </div> -->
 
     <div class="z-depth-3 section sectionsFormat" style="text-align: center;">
         <div class="row container flow-text">
             <br><br><br>
 
-        <!-- <h2 class="header">Mary-Claire & Kasey</h2> -->
 
         <h3 class="details">Our Wedding Details</h3><br>
 
         <h3 style="font-family: 'Great Vibes'; font-size: 52px;">
             Dress
         </h3>
-        <div class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+        <div class="container grey-text" id="grey-text">
         Formal, black tie optional (suit and tie and dresses)
         </div><br><br>
 
         <h3 style="font-family: 'Great Vibes'; font-size: 52px;">
             RSVP
         </h3>
-        <div class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+        <div class="container grey-text" id="grey-text">
         Please RSVP before August 20th, 2020.
         <div>Send all responses by clicking <a href="#rsvp"><u>here</u></a>.</div>
         </div><br><br>
@@ -75,14 +70,14 @@
         <h3 style="font-family: 'Great Vibes'; font-size: 52px;">
             Where to Stay
         </h3>
-        <div class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+        <div class="container grey-text" id="grey-text">
         You may request a hotel reservation in the RSVP form <a href="#rsvp"><u>below</u></a>.
         </div><br><br>
 
         <h3 style="font-family: 'Great Vibes'; font-size: 52px;">
             Contact Us
         </h3>
-        <div class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+        <div class="container grey-text" id="grey-text">
         Click <u>here</u> to contact us directly, otherwise please fill out the form to let us know if you will be attending.
         </div>
 
@@ -90,23 +85,22 @@
     </div>
 
     <div class="parallax-container">
-        <div class="parallax" id="img2"><img src="images/007.jpg"></div>
+        <div class="parallax" id="img2"><img src="images/007hp.jpg"></div>
     </div>
     <a id="rsvp"></a>
     <div class="z-depth-3 section sectionsFormat scrollopsy" style="text-align: center;">
         <div class="row container flow-text"><br><br>
         <h3>RSVP CHECK-IN</h3>
-        <div class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+        <div class="container grey-text" id="grey-text">
             Please fill out this form to let us know who will be attending.
         </div>
-        <!-- <ul class="container grey-text" style="margin-top: -20px;"><u>Saturday, January 9th 2021</u></ul> -->
         <br><br>
 
         <div class="row">
             <form class="col s12">
               <div class="row">
                 <div class="input-field col s6">
-                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                  <input id="first_name" type="text" class="validate">
                   <label for="first_name">First Name</label>
                 </div>
                 <div class="input-field col s6">
@@ -138,7 +132,7 @@
         
             <div class="input-field col s12">
                 <select multiple>
-                <option value="" disabled selected>Choose your option</option>
+                <option value="" disabled>Choose your option</option>
                 <option value="1">Option 1</option>
                 <option value="2">Option 2</option>
                 <option value="3">Option 3</option>
@@ -146,9 +140,7 @@
                 <label>Materialize Multiple Select</label>
             </div>
         </form>
-        <!-- <div style="font-size: 50px; margin-top: -20px; color: dimgray;">
-            January 9th, 2021</div> -->
-        <!-- <br> -->
+
         </div>
         <br><br>
         <a class="waves-effect waves-light btn">submit</a>
@@ -160,7 +152,6 @@
 
     <div class="footer-copyright" style="text-align: center; color: rgb(65, 65, 65);"><br>
       <div id="countdown" class="script-class countdown" style="font-size: 60px;"></div>
-      <!-- <div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">until our wedding</div> -->
       <div class="container" style="color: rgba(240, 248, 255, 0.3);">
       Copyright © MMXX Grävy Design Co.
       </div>

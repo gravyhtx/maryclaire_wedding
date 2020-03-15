@@ -14,7 +14,37 @@ body {
     background-repeat: repeat;
     background-size: cover;
     background-size: 75%;
+    cursor: default;
 }
+
+/* label color */
+.input-field label {
+color: #000 !important;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+color: #000 !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+border-bottom: 1px solid #000 !important;
+box-shadow: 0 1px 0 0 #000 !important;
+}
+/* valid color */
+.input-field input[type=text].valid {
+border-bottom: 1px solid #000 !important;
+box-shadow: 0 1px 0 0 #000 !important;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+border-bottom: 1px solid #000 !important;
+box-shadow: 0 1px 0 0 rgb(136, 128, 128) !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+color: #000 !important;
+}
+
 
 .left-right-boxes {
     padding-bottom: 64px;
@@ -39,18 +69,17 @@ body {
 
 }
 
-nav {
-    /* padding: 10px; */
-}
-
 .nav-wrapper {
     background-color: #ffeaf3;
 }
 
 a {
-    color: rgb(51, 51, 51) !important;
+    color: rgb(90, 90, 90) !important;
     cursor: default;
+}
 
+a:hover {
+    color: gray !important;
 }
 
 h2 {
@@ -119,13 +148,12 @@ img {
 }
 
 #img1 {
-    /* left: 20px; */
+    left: 100px;
 }
 
 #img3 {
-    top: -500px;
-    left: -70px;
-    width: 2000px;
+    left: 0px;
+    top: -400px;
 }
 
 .right {
@@ -146,9 +174,53 @@ img {
     margin-top: 50px;
 }
 
-.grey-text {
-    color: rgb(97, 97, 97) !important;
+#grey-text {
+    color: rgb(110, 110, 110) !important;
     font-size: medium;
+}
+
+.guestHeader {
+    font-size: 24px;
+}
+
+.guestText {
+    font-size: 20px !important;
+}
+
+.nameText {
+    resize: none;
+    margin: 20px;
+    width: 800px;
+    height: 45px;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Spartan';
+    font-size: 20px;
+    color: #505050;
+    text-align: center;
+    border: solid 2px pink;
+    border-radius: 10px;
+    outline: none !important;
+}
+
+.messageText {
+    resize: none;
+    overflow: scroll;
+    width: 800px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: 'Spartan';
+    font-size: 20px;
+    color: #505050;
+    border: solid 2px pink;
+    border-radius: 10px;
+    outline: none !important;
+}
+
+.guestDb {
+    font-size: 18px;
 }
 
 .script-class{
@@ -156,13 +228,22 @@ img {
 }
 
 .countdown {
-        text-shadow: 3px 3px #91bdda46;
+    text-shadow: 3px 3px #91bdda46;
 }
 
 .footer-copyright {
     /* margin-bottom: -10px !important; */
     background-image: "../../images/flowers1.jpg" !important;
     padding: 5px;
+}
+
+.messages {
+    margin-bottom: 20px;
+    color: rgb(100, 100, 100);
+}
+
+.names {
+    color: rgb(153, 137, 144);
 }
 
 /* PUSHPIN */
@@ -179,9 +260,35 @@ img {
   position: fixed !important;
 }
 
+
 .parallax-container {
-    height: 550px !important;
-  }
+    min-height: 550px !important;
+    min-width: auto !important;
+}
+
+
+/* .carousel-slider {
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow-x:hidden;
+    resize: none;
+    position: relative !important;
+} */
+
+#carousel {
+    height: 600px !important;
+}
+
+
+.carDiv {
+    border: solid 20px #ffd2e5;
+}
+
+#carouselImg {
+    height: 5000px;
+}
+  
 
 @media only screen and (max-width: 767px) {
     
@@ -212,8 +319,8 @@ img {
     }
 
     #img3 {
-        top: -400px;
-        left: 150px;
+        top: -500px;
+        left: 200px;
         height: auto;
         width: auto;
     }
@@ -235,6 +342,52 @@ img {
     }
 
     .parallax-container {
-        height: 520px !important;
+        min-height: 400px !important;
+    }
+
+    .guestHeader {
+        white-space: wrap;
+        border-left:2em solid transparent;
+        border-right:2em solid transparent;
+        font-size: 18px;
+    }
+    
+    .guestText {
+        /* margin: 100px; */
+    }
+    
+    .nameText {
+        resize: none;
+        width: 300px;
+    }
+    
+    .messageText {
+        resize: none;
+        overflow: scroll;
+        width: 300px
+    }
+
+    .names {
+        margin: 10px !important;
+    }
+
+    .messages {
+        /* white-space: nowrap; */
+        overflow: hidden;
+        word-wrap:break-word;
+        overflow: hidden;
+        border-left:2em solid transparent;
+        border-right:2em solid transparent;
+    }
+
+    #carousel {
+        height: 200px !important;
+        border-left:1em solid transparent;
+        border-right:1em solid transparent;
+    }
+
+    .crslImg {
+        height: auto;
+        width: 400px;
     }
 }

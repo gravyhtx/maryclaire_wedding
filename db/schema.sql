@@ -9,9 +9,9 @@ USE mc_guest_book;
 
 CREATE TABLE guest_book
 (
-	id int NOT NULL AUTO_INCREMENT,
-	guest VARCHAR(60) NOT NULL,
-    message VARCHAR(255) NOT NULL,
-	today DATETIME NULL,
+	ID int NOT NULL AUTO_INCREMENT,
+	Guest VARCHAR(50) NOT NULL DEFAULT "Anonymous",
+    Message VARCHAR(255) NOT NULL DEFAULT "Congrats!",
+	Today DATETIME NULL,
 	PRIMARY KEY (id)
 );
