@@ -81,6 +81,7 @@ h3 {
 
 img {
     width: 1500px;
+    height: auto;
 }
 
 .right {
@@ -136,18 +137,28 @@ img {
 @media only screen and (max-width: 767px) {
     
     img {
-        width: 1250px !important;
-        height: auto;
+        /* width: 1250px !important; */
+        /* height: auto; */
+    }
+
+    .reg {
+        font-size: 32px;
     }
     
-    .img1 {
-        width: 320px;
+    .ws {
+        width: 300px !important;
         height: auto;
+    }
+
+    .img1 {
+        width: 200px !important;
+        height: auto !important;
     }
 
     .img2 {
         /* width: 1200px !important; */
-        height: auto;
+        width: 300px !important;
+        height: auto !important;
     }
 
     .header {
