@@ -88,16 +88,17 @@ h3 {
 }
 
 img {
-    width: 1500px;
+    width: 1600px;
     height: auto;
 }
 
 #img1 {
-    left: 20px;
+    /* left: 20px; */
 }
 
 #img3 {
     top: -500px;
+    left: 120px;
 }
 
 .right {
