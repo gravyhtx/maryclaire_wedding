@@ -9,7 +9,7 @@
     
     <title>Mary-Claire & Kasey's Wedding | Guest Book</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Asap|Spartan|Great+Vibes|Sacramento|Satisfy&display=swap" rel="stylesheet">
@@ -48,25 +48,26 @@
     <div class="z-depth-3 section sectionsFormat" style="text-align: center;">
         <div class="container-fluid flow-text"><br>
         <h3 class="guestHeader">Leave a personal message for the bride and groom!</h3><br>
+        <form id="guestbook">
         <p class="container row container">
-            <div class="guestText">Name</div>
-            <textarea maxlength="75" class="text-area nameText"></textarea><br><br>
+          <label for="title"><div class="guestText">Name</div>
+            <textarea maxlength="75" id="name" class="text-area nameText"></textarea><br><br>
             <div class="guestText">Message</div><div style="font-size: 12px; color:gray">Max 255 char.</div>
-            <textarea maxlength="255" class="text-area messageText" data-limit-rows="true" rows="1" cols="1"></textarea>
+            <textarea maxlength="255" id="message" class="text-area messageText" data-limit-rows="true" rows="1" cols="1"></textarea>
             <br><br>
-            <a type="submit" class="waves-effect waves-light btn btn-light">submit</a>
-        </p>
+            <button class="waves-effect waves-light btn" type="submit" class="submit">submit</button>
+        </p></form>
         
         </div>
         <br><br><br><br><br><br><br>
-        <h3 class="guestHeader container"><b>MESSAGES</b></h3>
+        <h3 class="guestHeader book-container container"><b>MESSAGES</b></h3>
         <br><br><br><br>
-        <section class="guestDb">
+        <section class="book-container">
         <div class="messages">
         "Congrats!"
         <!-- {{message}} -->
         </div>
-        <div class="names">
+        <div class="guests">
         - Andrew Richard
         <!-- {{name}} -->
         </div>
@@ -94,7 +95,8 @@
     <!-- INITIALIZE MATERIALIZE JS -->
     <script>M.AutoInit();</script>
 
-    <script src = "assets/js/script.js"></script>
+    <script src = "js/script.js"></script>
+    <script src="js/guestbook.js" type="text/javascript"></script>
 
 
 </body>
