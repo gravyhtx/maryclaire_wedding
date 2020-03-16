@@ -20,6 +20,9 @@ var _hour = _minute * 60;
 var _day = _hour * 24;
 var timer;
 
+
+// COUNTDOWN TO DAY //
+
 function showRemaining() {
     var now = new Date();
     var distance = end - now;
@@ -31,8 +34,8 @@ function showRemaining() {
         return;
     }
     var days = Math.floor(distance / _day);
-    var hours = Math.floor((distance % _day) / _hour);
-    var minutes = Math.floor((distance % _hour) / _minute);
+    // var hours = Math.floor((distance % _day) / _hour);
+    // var minutes = Math.floor((distance % _hour) / _minute);
 
     document.getElementById('countdown').innerHTML = days + ' days<div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">until our wedding!</div>';
     // document.getElementById('countdown').innerHTML += hours + ' hrs ';
@@ -42,8 +45,26 @@ function showRemaining() {
 timer = setInterval(showRemaining, 1000);
 
 
+// TURN OFF CAROUSEL INDICATORS //
 
 $('.carousel.carousel-slider').carousel({
     fullWidth: true,
     indicators: false
   });
+
+
+// LIMIT TEXTAREA ROWS //
+
+$(document).ready(function () {
+$('textarea[data-limit-rows=true]')
+    .on('keypress', function (event) {
+        var textarea = $(this),
+            text = textarea.val(),
+            numberOfLines = (text.match(/\n/g) || []).length + 1,
+            maxRows = parseInt(textarea.attr('rows'));
+
+        if (event.which === 13 && numberOfLines === maxRows ) {
+        return false;
+        }
+    });
+});

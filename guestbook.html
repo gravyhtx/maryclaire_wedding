@@ -50,9 +50,9 @@
         <h3 class="guestHeader">Leave a personal message for the bride and groom!</h3><br>
         <p class="container row container">
             <div class="guestText">Name</div>
-            <textarea maxlength="50" class="text-area nameText"></textarea><br>
-            <div class="guestText">Message (Max 255 char.)</div>
-            <textarea maxlength="255" class="text-area messageText"></textarea>
+            <textarea maxlength="75" class="text-area nameText"></textarea><br><br>
+            <div class="guestText">Message</div><div style="font-size: 12px; color:gray">Max 255 char.</div>
+            <textarea maxlength="255" class="text-area messageText" data-limit-rows="true" rows="1" cols="1"></textarea>
             <br><br>
             <a class="waves-effect waves-light btn">submit</a>
         </p>
@@ -60,16 +60,20 @@
         </div>
         <br><br><br><br><br><br><br>
         <h3 class="guestHeader container"><b>MESSAGES</b></h3>
-        <br><br>
+        <br><br><br><br>
         <section class="guestDb">
         <div class="messages">
         "Congrats!"
+        <!-- {{message}} -->
         </div>
         <div class="names">
         - Andrew Richard
+        <!-- {{name}} -->
         </div>
+        <div class="dates">03/15/20</div>
+        <!-- {{date}} -->
         </section>
-        <br><br><br><br>
+        <br><br><br><br><br>
     </div>
 
     <!-- FOOTER -->
@@ -85,6 +89,7 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
 
     <!-- INITIALIZE MATERIALIZE JS -->
     <script>M.AutoInit();</script>

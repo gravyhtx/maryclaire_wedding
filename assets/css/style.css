@@ -148,7 +148,7 @@ img {
 }
 
 #img1 {
-    left: 100px;
+    /* left: 100px; */
 }
 
 #img3 {
@@ -181,6 +181,7 @@ img {
 
 .guestHeader {
     font-size: 24px;
+    line-height: 25px;
 }
 
 .guestText {
@@ -201,6 +202,7 @@ img {
     border: solid 2px pink;
     border-radius: 10px;
     outline: none !important;
+    overflow: hidden;
 }
 
 .messageText {
@@ -244,6 +246,11 @@ img {
 
 .names {
     color: rgb(153, 137, 144);
+}
+
+.dates {
+    font-size: 14px;
+    color: lightgrey;
 }
 
 /* PUSHPIN */
