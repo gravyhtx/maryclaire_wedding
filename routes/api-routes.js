@@ -21,12 +21,12 @@ module.exports = function(app) {
     });
   });
 
-  // Get route for returning posts of a specific guest
-  app.get("/api/posts/guest/:guest", function(req, res) {
-    // Add sequelize code to find all posts where the guest is equal to req.params.guest,
+  // Get route for returning posts of a specific name
+  app.get("/api/posts/name/:name", function(req, res) {
+    // Add sequelize code to find all posts where the name is equal to req.params.name,
     // return the result to the user with res.json
       db.Post.findOne({where: {
-        guest: req.params.guest
+        name: req.params.name
       }}).then(function(dbPost) {
         res.json(dbPost);
       });
@@ -58,9 +58,9 @@ module.exports = function(app) {
   app.post("/api/posts", function(req, res) {
     // Add sequelize code for creating a post using req.body,
     // then return the result using res.json
-    const {guest, message} = req.body
+    const {name, message} = req.body
     db.Post.create({
-      guest,
+      name,
       message,
     }).then(function(dbPost) {
       // We have access to the new Post as an argument inside of the callback function
@@ -92,7 +92,7 @@ module.exports = function(app) {
     // Add code here to update a post using the values in req.body, where the id is equal to
     // req.body.id and return the result to the user using res.json
     db.Post.update({
-    guest: req.body.guest,
+    name: req.body.name,
     message: req.body.message,
     // today: req.body.today
     }, {
