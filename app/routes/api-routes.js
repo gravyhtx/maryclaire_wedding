@@ -21,14 +21,14 @@ module.exports = function(app) {
 
   // Add a chirp
   app.post("/api/new", function(req, res) {
-    console.log("Chirp Data:");
-    console.log(req.body);
+    // console.log("Chirp Data:");
+    // console.log(req.body);
 
     var dbQuery = "INSERT INTO chirps (author, body, created_at) VALUES (?,?,?)";
 
     connection.query(dbQuery, [req.body.author, req.body.body, req.body.created_at], function(err, result) {
       if (err) throw err;
-      console.log("Chirp Successfully Saved!");
+      // console.log("Chirp Successfully Saved!");
       res.end();
     });
   });
