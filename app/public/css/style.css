@@ -1,0 +1,400 @@
+html,body {
+    margin: 0 auto;
+    background-attachment: fixed;
+    backface-visibility: hidden;
+    scroll-behavior: smooth;
+    /* background-image: "../../images/flowers1.jpg";
+    background-size: cover; */
+}
+
+body {
+    background-color: #fff5f9;
+    font-family: 'Spartan';
+    background-image: url("../../images/rpt.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-size: 75%;
+    cursor: default;
+}
+
+/* label color */
+.input-field label {
+color: #000 !important;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+color: #000 !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+border-bottom: 1px solid #000 !important;
+box-shadow: 0 1px 0 0 #000 !important;
+}
+/* valid color */
+.input-field input[type=text].valid {
+border-bottom: 1px solid #000 !important;
+box-shadow: 0 1px 0 0 #000 !important;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+border-bottom: 1px solid #000 !important;
+box-shadow: 0 1px 0 0 rgb(136, 128, 128) !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+color: #000 !important;
+}
+
+
+.left-right-boxes {
+    padding-bottom: 64px;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-right-boxes::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* This is the important part */
+    will-change: transform; 
+
+}
+
+.nav-wrapper {
+    background-color: #ffeaf3;
+}
+
+a {
+    color: rgb(90, 90, 90) !important;
+    cursor: default;
+}
+
+a:hover {
+    color: gray !important;
+}
+
+h2 {
+    margin-top: -10px !important;
+}
+
+.sectionsFormat {
+    background-color: #fffff0;
+}
+
+.menu-link:hover {
+    background-color: rgb(243, 190, 223) !important;
+    color: rgb(252, 250, 239) !important;
+    cursor: default !important;
+}
+
+.brand-logo {
+    font-family: 'Satisfy', sans-serif;
+    background-color: #f5eef200 !important;
+}
+
+.brand-logo:hover {
+    font-family: 'Satisfy', sans-serif;
+    background-color: #f5eef200 !important;
+    color: #505050 !important;
+    text-shadow: 3px 3px #d47ab663;
+    cursor: default !important;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.details {
+    margin-top: -50px;
+    font-size: 60px;
+}
+
+.btn {
+    background-color: #ffa0c6 !important;
+}
+
+h3 {
+    color: rgb(75, 75, 75);
+    /* font-family: 'Great Vibes'; */
+}
+
+img {
+    width: 1600px;
+    height: auto;
+}
+
+#img1 {
+    /* left: 100px; */
+}
+
+#img3 {
+    left: 0px;
+    top: -400px;
+}
+
+.right {
+    font-size: 32px !important
+}
+
+.left-logo {
+    /* margin-top: 10px; */
+    margin-left: 30px;
+}
+
+.header {
+    font-family: 'Rouge Script', sans-serif;
+    font-size: 120px;
+    color: rgb(92, 92, 92);
+    margin-bottom: 75px;
+    text-shadow: 3px 3px #66666646;
+    margin-top: 50px;
+}
+
+#grey-text {
+    color: rgb(110, 110, 110) !important;
+    font-size: medium;
+}
+
+.guestHeader {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.guestText {
+    font-size: 20px !important;
+}
+
+.nameText {
+    resize: none;
+    margin: 20px;
+    width: 800px;
+    height: 45px;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Spartan';
+    font-size: 20px;
+    color: #505050;
+    text-align: center;
+    border: solid 2px pink;
+    border-radius: 10px;
+    outline: none !important;
+    overflow: hidden;
+}
+
+.messageText {
+    resize: none;
+    overflow: scroll;
+    width: 800px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: 'Spartan';
+    font-size: 20px;
+    color: #505050;
+    border: solid 2px pink;
+    border-radius: 10px;
+    outline: none !important;
+}
+
+.guestDb {
+    font-size: 18px;
+}
+
+.script-class{
+    font-family: 'Sacramento';
+}
+
+.countdown {
+    text-shadow: 3px 3px #91bdda46;
+}
+
+.footer-copyright {
+    /* margin-bottom: -10px !important; */
+    background-image: "../../images/flowers1.jpg" !important;
+    padding: 5px;
+}
+
+.messages {
+    margin-bottom: 20px;
+    color: rgb(100, 100, 100);
+}
+
+.names {
+    color: rgb(153, 137, 144);
+}
+
+.dates {
+    font-size: 14px;
+    color: lightgrey;
+}
+
+/* PUSHPIN */
+
+.pin-top {
+  position: relative;
+}
+
+.pin-bottom {
+  position: relative;
+}
+
+.pinned {
+  position: fixed !important;
+}
+
+
+.parallax-container {
+    min-height: 550px !important;
+    min-width: auto !important;
+}
+
+
+/* .carousel-slider {
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow-x:hidden;
+    resize: none;
+    position: relative !important;
+} */
+
+#carousel {
+    height: 600px !important;
+}
+
+
+.carDiv {
+    border: solid 20px #ffd2e5;
+}
+
+#carouselImg {
+    height: 5000px;
+}
+  
+
+@media only screen and (max-width: 767px) {
+    
+    img {
+        /* width: 1250px !important; */
+        height: auto;
+    }
+
+    .reg {
+        font-size: 32px;
+    }
+    
+    .ws {
+        width: 300px !important;
+        height: auto;
+    }
+
+    #img1 {
+        left: 100px;
+    }
+
+    #img2 {
+        /* width: 1200px !important; */
+        width: 300px !important;
+        height: auto !important;
+        left: -150px;
+        top: 50px;
+    }
+
+    #img3 {
+        top: -500px;
+        left: 200px;
+        height: auto;
+        width: auto;
+    }
+
+    .header {
+        font-size: 48px;
+        margin-top: -5px;
+        margin-bottom: 50px;
+    }
+
+    .details {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+
+    .brand-logo {
+        font-size: 24px !important;
+    }
+
+    .parallax-container {
+        min-height: 400px !important;
+    }
+
+    .guestHeader {
+        white-space: wrap;
+        border-left:2em solid transparent;
+        border-right:2em solid transparent;
+        font-size: 18px;
+    }
+    
+    .guestText {
+        /* margin: 100px; */
+    }
+    
+    .nameText {
+        resize: none;
+        width: 300px;
+    }
+    
+    .messageText {
+        resize: none;
+        overflow: scroll;
+        width: 300px
+    }
+
+    .names {
+        margin: 10px !important;
+    }
+
+    .messages {
+        /* white-space: nowrap; */
+        overflow: hidden;
+        word-wrap:break-word;
+        overflow: hidden;
+        border-left:2em solid transparent;
+        border-right:2em solid transparent;
+    }
+
+    #carousel {
+        height: 200px !important;
+        border-left:1em solid transparent;
+        border-right:1em solid transparent;
+    }
+
+    .crslImg {
+        height: auto;
+        width: 400px;
+    }
+}
