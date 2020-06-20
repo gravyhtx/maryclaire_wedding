@@ -37,7 +37,7 @@ function showRemaining() {
     // var hours = Math.floor((distance % _day) / _hour);
     // var minutes = Math.floor((distance % _hour) / _minute);
 
-    document.getElementById('countdown').innerHTML = days + ' days<div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">until our wedding!</div>';
+    document.getElementById('countdown').innerHTML = 'TODAY<div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">is our wedding!</div>';
     // document.getElementById('countdown').innerHTML += hours + ' hrs ';
     // document.getElementById('countdown').innerHTML += minutes + ' min';
 }
