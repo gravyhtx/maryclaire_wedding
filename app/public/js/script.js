@@ -29,15 +29,15 @@ function showRemaining() {
     if (distance < 0) {
 
         clearInterval(timer);
-        document.getElementById('countdown').innerHTML = 'Thank You for Attending Our Wedding';
+        document.getElementById('countdown').innerHTML = '<a href="/guestbook.html" style="text-decoration: none;">Thank You for Coming to Our Wedding!</a>';
 
         return;
     }
     var days = Math.floor(distance / _day);
     // var hours = Math.floor((distance % _day) / _hour);
     // var minutes = Math.floor((distance % _hour) / _minute);
-
-    document.getElementById('countdown').innerHTML = 'TODAY<div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">is our wedding!</div>';
+ 
+    document.getElementById('countdown').innerHTML = 'THANK YOU<div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">for coming to our wedding!</div>';
     // document.getElementById('countdown').innerHTML += hours + ' hrs ';
     // document.getElementById('countdown').innerHTML += minutes + ' min';
 }
